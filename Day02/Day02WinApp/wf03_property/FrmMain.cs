@@ -43,6 +43,7 @@ namespace wf03_property
             if(ChkBold.Checked == true) // Bold에 Check 되면 Bold체로 바뀜
             {
                 style |= FontStyle.Bold; // Bit 연산 or
+                Console.WriteLine(style); 
             }
             if(ChkItalic.Checked == true) // Italic에 Check되면 기울어짐
             {
