@@ -27,5 +27,5 @@
 	- Winforms 컨트롤
 	- 리스트뷰, 데이터 그리드 추가학습 요망
 	
-	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/property.png" width="400" />
-<---속성 공부--->	
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/property.png" width="500" />
+<3일차 윈폼 학습 결과!>	
