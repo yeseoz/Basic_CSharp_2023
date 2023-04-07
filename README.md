@@ -52,7 +52,6 @@
 	비동기 복사 완료
 	
 	
-<<<<<<< Updated upstream
 =======
 ## 5일차
 - C# 기본
@@ -62,4 +61,4 @@
 	- Winforms 디자인 오류시 해결방법
 	- Window 탐색기 만들기
 	
->>>>>>> Stashed changes
+
