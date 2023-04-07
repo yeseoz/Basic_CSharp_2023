@@ -29,3 +29,20 @@
 	
 	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/property.png" width="500" />
 <3일차 윈폼 학습 결과!>	
+
+
+## 4일차
+- C# 기본
+	- 클래스 상속 계속
+	
+- Win App
+	- Winforms 컨트롤 마무리
+	- Winforms 예제 실습
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/SyncCopy1.png" width="500" />
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/SyncCopy2.png" width="500" />
+	파일 복사
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/SyncCopy3.png" width="500" />
+	동기 복사 완료
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/ASyncCopy.png" width="500" />
+	비동기 복사 완료
+	
