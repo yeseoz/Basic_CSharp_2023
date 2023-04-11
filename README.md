@@ -54,15 +54,35 @@
 
 ## 5일차
 - C# 기본
-
+	- 인터페이스, 추상클래스
+	- 프로퍼티
+	- 배열, 컬렉션
 
 - Win App
 	- Winforms 디자인 오류시 해결방법
-	- Window 탐색기 만들기
+	- Winforms 탐색기 만들기
 
 5일차 윈도우 탐색기 만들기중
 	
-<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/Winforms.png" width="500" />
+<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/Winforms1.png" width="500" />
+
+
+## 6일차
+- C# 기본
+	- 컬렉션
+	- 일반화(Generic) 프로그래밍
+	- 예외처리
+	
+- Win App
+	- Winforms 탐색기 마무리
+	- DB 핸들링(연동)
+	- BookRentalShop DB 사용해 Winforms 앱 개발
+	- 실습 예제
+	
+	윈도우 탐색기
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/Winforms1.png" width="500" />
+	
+	
 
 	
 

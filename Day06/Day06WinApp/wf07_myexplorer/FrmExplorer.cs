@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -104,8 +105,8 @@ namespace wf07_myexplorer
         /// <param name="e"></param>
         private void TrvDrive_BeforeCollapse(object sender, TreeViewCancelEventArgs e)
         {
-                e.Node.ImageIndex = 1;
-                e.Node.SelectedImageIndex = 1;
+            e.Node.ImageIndex = 1;
+            e.Node.SelectedImageIndex = 1;
         }
         /// <summary>
         /// 트리노드를 마우스로 클릭했을때의 이벤트
@@ -118,10 +119,15 @@ namespace wf07_myexplorer
             SetLsvForder(e.Node.FullPath);
         }
 
+        /// <summary>
+        /// 리스트뷰에 폴더내 내용 그리기 메서드
+        /// </summary>
+        /// <param name="fullPath">선택한 폴더경로</param>
         private void SetLsvForder(string fullPath)
         {
             try
             {
+                TxtPath.Text = fullPath;
                 LsvFolder.Items.Clear(); //기존 리스트 삭제
                 DirectoryInfo dir = new DirectoryInfo(fullPath);
                 int dirCount = 0;
@@ -147,7 +153,13 @@ namespace wf07_myexplorer
 
                 foreach (FileInfo file in files)
                 {
-                    LsvFolder.Items.Add(file.Name);
+                    ListViewItem lvi = new ListViewItem();
+
+                    lvi.Text = file.Name;
+                    lvi.ImageIndex= 4;
+
+                    lvi.ImageIndex = SetExtImg(file.Name);
+                    LsvFolder.Items.Add(lvi);
 
                     if (file.LastWriteTime != null)
                     {
@@ -169,6 +181,116 @@ namespace wf07_myexplorer
                 MessageBox.Show("리스트뷰 오류발생", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        /// <summary>
+        /// 파일 확장자에 따라 아이콘 변경
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        /// 
+        private int SetExtImg(string name)
+        {
+         FileInfo fInfo = new FileInfo(name);
+            string ext = fInfo.Extension; // 확장자를 가져옴
+            var exVal = 0;
+
+            switch(ext)
+            {
+                case ".exe": //실행파일
+                    exVal = 3;
+                    break;
+                case ".png":
+                case ".jpg":
+                case ".gif":
+                    exVal = 5;
+                    break;
+
+                default:
+                    exVal = 4;
+                    break;
+            }
+            return exVal; 
+        }
+
+        /// <summary>
+        /// 리스트뷰 보기 변경 이벤트
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CboView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*View.Details
+            View.Smallicon
+            View.LargeIcon
+            View.List
+            View.Title*/
+            switch (CboView.SelectedIndex)
+            {
+                case 0:
+                    LsvFolder.View = View.Details;
+                    break;
+                case 1:
+                    LsvFolder.View = View.SmallIcon;
+                    break;
+                case 2:
+                    LsvFolder.View = View.LargeIcon;
+                    break;
+                case 3:
+                    LsvFolder.View = View.List;
+                    break;
+                case 4:
+                    LsvFolder.View = View.Tile;
+                    break;
+                    //default : // 위와 같은 경우면 default는 없어도 됨
+                    // LsvFolder.View = View.Details;
+                    //break;
+
+            }
+        }
+
+        /// <summary>
+        /// 디렉토리 경로를 바꿨을때 처리 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TxtPath_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13) // 엔터키를 누르면
+            {
+                try
+                {
+                    SetLsvForder(TxtPath.Text);
+                }
+                catch
+                {
+                    MessageBox.Show(TxtPath.Text + "경로를 찾을 수 없습니다. 다시 시도해주세요.","나의 탐색기", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 리스트뷰 파일 더블클릭처리 이벤트
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LsvFolder_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if(LsvFolder.SelectedItems.Count ==1) 
+            {
+                //string processPath;
+                //if (LsvFolder.SelectedItems[0].Text.IndexOf("\\")>0)
+                //{
+                //    processPath = LsvFolder.SelectedItems[0].Text;  // 사용 불가능
+                //}
+                //else
+                //{
+                
+                string processPath = TxtPath.Text + "\\" + LsvFolder.SelectedItems[0].Text;
+
+                // Process.Start("explorer.exe", processPath); 탐색기 열어줌
+                Process.Start(processPath);
+            }
         }
     }
 }
