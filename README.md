@@ -76,13 +76,16 @@
 - Win App
 	- Winforms 탐색기 마무리
 	- DB 핸들링(연동)
-	- BookRentalShop DB 사용해 Winforms 앱 개발
-	- 실습 예제
-	
+		
 윈도우 탐색기 exe파일 실행
 
 <img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/Winforms2.png" width="500" />
-	
+
+
+## 7일차
+- Win App
+	- BookRentalShop DB 사용해 Winforms 앱 개발
+	- 실습 예제	
 	
 
 	
