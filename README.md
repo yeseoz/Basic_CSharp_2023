@@ -83,7 +83,22 @@
 
 
 ## 7일차
+- C# 기본
+	- 대리자, 이벤트
+	- 람다식
+	- 애트리뷰트
+	- 파일핸들링
+	- 더 공부해야할 내용(LINQ, 리플렉션, dynamic)
+
 - Win App
+	- DB핸들링
+	- SDI vs MDI
+	
+	
+## 8일차
+- C# 기본
+	
+- WinApp
 	- BookRentalShop DB 사용해 Winforms 앱 개발
 	- 실습 예제	
 	
