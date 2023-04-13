@@ -113,14 +113,14 @@
 	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/CreateFile1.png" width="500" />
 	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/CreateFile2.png" width="500" />
 	
-	NotePad (Winforms)
-	
-	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/Win_Notpad.png" width="500" />
-	
-	
+		
 - WinApp
 	- BookRentalShop DB 사용해 Winforms 앱 개발
-	- 실습 예제	
+	- 실습 예제
+
+	NotePad (Winforms)
+	
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/Win_Notpad.png" width="500" />	
 	
 
 	

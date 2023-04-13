@@ -43,14 +43,14 @@
             this.TxtPath.Location = new System.Drawing.Point(13, 13);
             this.TxtPath.Name = "TxtPath";
             this.TxtPath.ReadOnly = true;
-            this.TxtPath.Size = new System.Drawing.Size(222, 21);
+            this.TxtPath.Size = new System.Drawing.Size(333, 21);
             this.TxtPath.TabIndex = 0;
             this.TxtPath.TabStop = false;
             // 
             // BtnLoad
             // 
             this.BtnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnLoad.Location = new System.Drawing.Point(241, 13);
+            this.BtnLoad.Location = new System.Drawing.Point(352, 13);
             this.BtnLoad.Name = "BtnLoad";
             this.BtnLoad.Size = new System.Drawing.Size(75, 23);
             this.BtnLoad.TabIndex = 0;
@@ -61,7 +61,7 @@
             // BtnSave
             // 
             this.BtnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnSave.Location = new System.Drawing.Point(322, 13);
+            this.BtnSave.Location = new System.Drawing.Point(433, 13);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(75, 23);
             this.BtnSave.TabIndex = 1;
@@ -76,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RtbNote.Location = new System.Drawing.Point(13, 41);
             this.RtbNote.Name = "RtbNote";
-            this.RtbNote.Size = new System.Drawing.Size(384, 241);
+            this.RtbNote.Size = new System.Drawing.Size(495, 345);
             this.RtbNote.TabIndex = 2;
             this.RtbNote.Text = "";
             // 
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 294);
+            this.ClientSize = new System.Drawing.Size(517, 398);
             this.Controls.Add(this.RtbNote);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.BtnLoad);
