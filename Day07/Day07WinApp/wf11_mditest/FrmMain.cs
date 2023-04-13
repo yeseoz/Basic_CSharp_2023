@@ -22,7 +22,7 @@ namespace wf11_mditest
 
 
         }
-        [Obsolete("OldMethod는 다음버전에서 폐기됩니다. NewMethod를 이용하세요.")]
+        [Obsolete("OldMethod는 다음버전에서 폐기됩니다. NewMethod를 이용하세요.")] // 어트리뷰트
         private void OldMethod()
         {
             Console.WriteLine("올드메서드");
