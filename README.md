@@ -97,8 +97,7 @@
 ## 8일차
 - C# 기본
 	- 파일핸들링
-	- 스레드 / 테스크 (동기/비동기할때 나오는 부분)
-	- 가비지 컬렉션
+	- 윈폼 메모장(파일핸들링)
 	
 	파일 읽어 오기(Console)
 	
@@ -116,11 +115,27 @@
 		
 - WinApp
 	- BookRentalShop DB 사용해 Winforms 앱 개발
-	- 실습 예제
+		- WinForms MDI
+		- MySQL.Data Lib DB 연동
+	
 
 	NotePad (Winforms)
 	
 	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/Win_Notpad.png" width="500" />	
+	
+	
+## 9일차
+- C# 기본
+	- 스레드 / 테스크 (동기/비동기할때 나오는 부분)
+	- 가비지 컬렉션
+	
+- Win App
+	- BookRentalShop 만들기 계속
+
+
+## 10일차 
+- Win App
+	- BookRentalShop 만들기 계속
 	
 
 	

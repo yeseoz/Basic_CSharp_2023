@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wf14_winforms_thread", "wf14_winforms_thread\wf14_winforms_thread.csproj", "{7A75C3BA-D999-49BB-B109-4F2CF0F4A24E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wf13_bookrentalshop", "wf13_bookrentalshop\wf13_bookrentalshop.csproj", "{CEC72875-4378-4C50-927F-4C8F43E2FA87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A75C3BA-D999-49BB-B109-4F2CF0F4A24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A75C3BA-D999-49BB-B109-4F2CF0F4A24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A75C3BA-D999-49BB-B109-4F2CF0F4A24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A75C3BA-D999-49BB-B109-4F2CF0F4A24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC72875-4378-4C50-927F-4C8F43E2FA87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC72875-4378-4C50-927F-4C8F43E2FA87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC72875-4378-4C50-927F-4C8F43E2FA87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC72875-4378-4C50-927F-4C8F43E2FA87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F03BC1DB-1DA2-413A-A026-73EE4D5C5140}
+	EndGlobalSection
+EndGlobal
