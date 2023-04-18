@@ -138,7 +138,10 @@
 	- BookRentalShop 만들기 마무리
 	
 - 코딩테스트
-	
+
+10일차 책대여점 프로그램BookRantalshop
+
+	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/BookRantalshoppng" width="500" />	
 
 	
 
