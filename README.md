@@ -139,9 +139,10 @@
 	
 - 코딩테스트
 
+
 10일차 책대여점 프로그램BookRantalshop
 
-	<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/BookRantalshop.png width="500" />	
+	[북대여점](https://github.com/yeseoz/Basic_CSharp_2023/blob/main/image/BookRantalshop.png)	
 
 	
 
