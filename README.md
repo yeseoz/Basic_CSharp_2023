@@ -142,7 +142,7 @@
 
 10일차 책대여점 프로그램BookRantalshop
 
-<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/BookRantalshop.png" width="500" />	
+<img src="https://raw.githubusercontent.com/yeseoz/Basic_CSharp_2023/main/image/BookRantalshop.png" width="800" />	
 
 	
 
